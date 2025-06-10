@@ -1,0 +1,8 @@
+Ma tran:
+1 2 3 
+4 5 6 
+7 8 9 
+Trung cong: 6.00
+Cot 1: 12
+Cot 2: 15
+Cot 3: 18
