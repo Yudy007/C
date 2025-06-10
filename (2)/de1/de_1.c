@@ -1,3 +1,8 @@
+//Đề 01 Sử dụng hàm và con trỏ trong ngôn ngữ C thực hiện
+//1. Đọc danh sách nhân viên (mã NV, tên, lương) từ tệp và in ra.
+//2. Thống kê số nhân viên có lương trên 40 triệu.
+//3. Tìm nhân viên có lương thấp nhất.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,7 +13,6 @@ typedef struct {
     float luong;
 } NhanVien;
 
-// Hàm đọc danh sách nhân viên từ file
 int docDanhSachNV(const char *filename, NhanVien *ds, int *n) {
     FILE *f = fopen(filename, "r");
     if (!f) {
@@ -23,7 +27,7 @@ int docDanhSachNV(const char *filename, NhanVien *ds, int *n) {
     return 1;
 }
 
-// Hàm in danh sách nhân viên
+
 void inDanhSachNV(NhanVien *ds, int n) {
     printf("Danh sach nhan vien:\n");
     for (int i = 0; i < n; i++) {
@@ -31,7 +35,7 @@ void inDanhSachNV(NhanVien *ds, int n) {
     }
 }
 
-// Hàm đếm số nhân viên có lương trên 40 triệu
+
 int demLuongTren40tr(NhanVien *ds, int n) {
     int dem = 0;
     for (int i = 0; i < n; i++) {
@@ -41,7 +45,7 @@ int demLuongTren40tr(NhanVien *ds, int n) {
     return dem;
 }
 
-// Hàm tìm nhân viên có lương thấp nhất
+
 int timLuongThapNhat(NhanVien *ds, int n) {
     if (n == 0) return -1;
     int minIdx = 0;

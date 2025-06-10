@@ -1,3 +1,7 @@
+//Câu 1: Nhập dãy điểm x1,y1,...,xn,yn từ tệp.
+//In dãy điểm ra màn hình. Tìm đoạn xa gốc tọa độ nhất.
+//Đếm số điểm nằm ở góc phần tư thứ 2.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
